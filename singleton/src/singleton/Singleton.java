@@ -1,3 +1,5 @@
+package singleton;
+
 // Lazy initialization variant
 public class Singleton {
 
