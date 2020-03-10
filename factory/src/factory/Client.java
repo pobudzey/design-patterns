@@ -4,17 +4,13 @@ public class Client {
 
     public static void main(String[] args) {
 
-        ShapeFactory shapeFactory = new ShapeFactory();
+        SquareCreator sc = new SquareCreator();
+        CircleCreator cc = new CircleCreator();
 
-        Shape circle = shapeFactory.produceShape("Circle");
-        circle.draw();
-
-        Shape square = shapeFactory.produceShape("Square");
+        Shape square = sc.factoryMethod();
         square.draw();
-
-        Shape rectangle = shapeFactory.produceShape("Rectangle");
-        rectangle.draw();
-        
+        Shape circle = cc.factoryMethod();
+        circle.draw();
     }
 
 }
